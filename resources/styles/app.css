@@ -10,5 +10,19 @@
 @import './base/typography.css';
 @import './base/global.css';
 
+/**
+ * This injects any component classes registered by plugins.
+ *
+ */
+
 @import 'tailwindcss/components';
+
+/**
+ * Here we add custom component classes; stuff we want loaded
+ * *before* the utilities so that the utilities can still
+ * override them.
+ *
+ */
+@import './components/buttons.css';
+
 @import 'tailwindcss/utilities';
