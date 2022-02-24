@@ -1,0 +1,18 @@
+@layer base {
+  :root {
+    --c-black: #050708;
+    --c-white: #f9feff;
+    --c-gray: #a0a0a0;
+
+    /* Brand Primary  */
+    --c-primary-500: #224f6d;
+    --c-primary-600: #204967;
+    --c-primary-700: #132a48;
+
+    /* Brand Secondary  */
+    --c-secondary: #2355a1;
+
+    /* Brand Accent */
+    --c-accent: #bc3049;
+  }
+}

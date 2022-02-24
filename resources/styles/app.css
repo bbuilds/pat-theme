@@ -1,3 +1,14 @@
 @import 'tailwindcss/base';
+
+/**
+ * Here we add custom base styles, applied after the tailwind-base
+ * classes
+ *
+ */
+
+@import './base/colors.css';
+@import './base/typography.css';
+@import './base/global.css';
+
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';

@@ -1,0 +1,16 @@
+@layer base {
+  body {
+    background: transparent
+      linear-gradient(
+        180deg,
+        var(--c-primary-700) 0%,
+        var(--c-primary-600) 68%,
+        var(--c-primary-500) 100%
+      )
+      0% 0% no-repeat padding-box;
+  }
+
+  img {
+    @apply w-full;
+  }
+}

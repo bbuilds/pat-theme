@@ -1,9 +1,14 @@
+// Settings
+const settingsColors = require('./tailwind/tailwind.settings.colors');
+const settingsFontFamily = require('./tailwind/tailwind.settings.fontFamily');
+const settingsfluidType = require('./tailwind/tailwind.settings.fluidType');
+
 module.exports = {
-  content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
+  content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
-    extend: {
-      colors: {},
-    },
+    fontFamily: settingsFontFamily,
+    colors: settingsColors,
+    fontSize: settingsfluidType,
   },
   variants: {
     extend: {},

@@ -8,6 +8,20 @@ namespace App;
 
 use function Roots\bundle;
 
+
+/**
+ * Preloads the main web font to improve performance.
+ * @return void
+**/
+
+add_action( 'wp_head', function() {
+		?>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<?php
+} );
+
 /**
  * Register the theme assets.
  *
