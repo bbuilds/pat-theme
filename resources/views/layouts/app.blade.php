@@ -3,7 +3,7 @@
 </a>
 
 @include('sections.header')
-
+  @svg('images.svg.pat-logo-icon-body-bg')
   <main id="main" class="main">
     @yield('content')
   </main>

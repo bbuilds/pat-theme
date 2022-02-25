@@ -1,5 +1,5 @@
 import {domReady} from '@roots/sage/client';
-
+import toggleMobileMenu from './navigation';
 /**
  * app.main
  */
@@ -10,6 +10,7 @@ const main = async (err) => {
   }
 
   // application code
+  toggleMobileMenu();
 };
 
 /**

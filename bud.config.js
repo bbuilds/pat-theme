@@ -41,5 +41,5 @@ module.exports = async (app) => {
     /**
      * Development URL
      */
-    .serve('http://powerassettech.local:4020');
+    .serve('http://powerassettech.local:8000');
 };

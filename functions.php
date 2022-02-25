@@ -54,7 +54,7 @@ try {
 |
 */
 
-collect(['setup', 'filters', 'ACF/options'])
+collect(['setup', 'filters', 'ACF/options','walker'])
     ->each(function ($file) {
         if (! locate_template($file = "app/{$file}.php", true, true)) {
             wp_die(

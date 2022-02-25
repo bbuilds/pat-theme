@@ -3,9 +3,12 @@
 namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
+use Roots\Acorn\View\Composers\Concerns\AcfFields;
 
 class App extends Composer
 {
+    use AcfFields;
+
     /**
      * List of views served by this composer.
      *
@@ -24,6 +27,7 @@ class App extends Composer
     {
         return [
             'siteName' => $this->siteName(),
+            'logo_ID' => $this->siteLogoID(),
         ];
     }
 
@@ -35,5 +39,15 @@ class App extends Composer
     public function siteName()
     {
         return get_bloginfo('name', 'display');
+    }
+
+    /**
+     * Returns the site logo ID from options
+     *
+     * @return int
+     */
+    public function siteLogoID()
+    {
+        return get_field('pat_theme_logo', 'option');
     }
 }
