@@ -1,6 +1,29 @@
 @layer components {
   .btn,
   .button {
-    @apply text-white font-bold py-2 px-4 rounded-full bg-accent;
+    @apply font-bold;
+  }
+
+  /* Pop */
+  @keyframes pop {
+    50% {
+      transform: scale(1.05);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .pop {
+    transform: translateZ(0);
+    @apply drop-shadow-sm inline-block;
+
+    &:hover {
+      animation-name: pop;
+      animation-duration: 300ms;
+      animation-timing-function: linear;
+      animation-iteration-count: 1;
+    }
   }
 }
