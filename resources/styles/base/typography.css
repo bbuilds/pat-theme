@@ -9,27 +9,27 @@
   }
 
   h1 {
-    @apply text-5xl;
+    @apply text-9xl;
   }
 
   h2 {
-    @apply text-4xl;
+    @apply text-8xl;
   }
 
   h3 {
-    @apply text-3xl;
+    @apply text-7xl;
   }
 
   h4 {
-    @apply text-2xl;
+    @apply text-6xl;
   }
 
   h5 {
-    @apply text-xl;
+    @apply text-5xl;
   }
 
   h6 {
-    @apply text-lg;
+    @apply text-4xl;
   }
 
   a {
