@@ -9,6 +9,11 @@ module.exports = {
     fontFamily: settingsFontFamily,
     colors: settingsColors,
     fontSize: settingsfluidType,
+    extend: {
+      zIndex: {
+        negative: '-1',
+      },
+    },
   },
   variants: {
     extend: {},

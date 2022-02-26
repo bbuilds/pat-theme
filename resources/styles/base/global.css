@@ -13,4 +13,15 @@
   img {
     @apply w-full;
   }
+
+  .bg-particles {
+    top: -20%;
+    left: -20%;
+  }
+
+  .bg-icon {
+    top: -10%;
+    right: -10%;
+    width: 60%;
+  }
 }

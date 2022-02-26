@@ -1,4 +1,4 @@
-<header class="bg-white text-black py-4 w-full">
+<header class="relative bg-white text-black py-4 w-full z-50">
   <div class="container mx-auto px-4 flex items-center justify-between">
     <a href="{{ home_url('/') }}" class="w-24 md:w-32 lg:w-60">
       @svg("images.svg.pat-logo-horizontal")
