@@ -7,7 +7,7 @@ use Roots\Acorn\View\Component;
 class Button extends Component
 {
     /**
-     * The alert type.
+     * will the button pop
      *
      * @var boolean
      */
@@ -26,6 +26,13 @@ class Button extends Component
      * @var string
      */
     public $url;
+
+    /**
+     * The button ID
+     *
+     * @var string
+     */
+    public $custom_id;
 
 
     /**
