@@ -7,12 +7,12 @@ module.exports = {
   content: ['./index.php', './app/**/*.php', './resources/**/*.{php,vue,js}'],
   theme: {
     fontFamily: settingsFontFamily,
-    colors: settingsColors,
     fontSize: settingsfluidType,
     extend: {
       zIndex: {
         negative: '-1',
       },
+      colors: settingsColors,
     },
   },
   variants: {
