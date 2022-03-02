@@ -27,13 +27,6 @@ class Button extends Component
      */
     public $url;
 
-    /**
-     * The button ID
-     *
-     * @var string
-     */
-    public $custom_id;
-
 
     /**
      * The alert type.
