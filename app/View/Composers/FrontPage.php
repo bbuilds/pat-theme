@@ -32,6 +32,9 @@ class FrontPage extends Composer
             'testimonial_quote' => get_field('testimonial_quote'),
             'testimonial_name' => get_field('testimonial_name'),
             'testimonial_company' => get_field('testimonial_company'),
+            'callout_image' => get_field('callout_image'),
+            'callout_title' => get_field('callout_title'),
+            'callout_content' => get_field('callout_content'),
         ];
     }
 }
