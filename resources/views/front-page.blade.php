@@ -6,5 +6,6 @@
     @include('sections.home.specialize')
     @include('sections.home.testimonial')
     @include('sections.home.callout')
+    @include('sections.home.call-to-action')
   @endwhile
 @endsection
