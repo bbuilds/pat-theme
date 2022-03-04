@@ -19,6 +19,14 @@
     left: -20%;
   }
 
+  .bg-particles-bottom {
+    bottom: -8%;
+    left: 0;
+    right: 0;
+    max-height: 1000px;
+    object-fit: cover;
+  }
+
   .bg-icon {
     top: -10%;
     right: -10%;

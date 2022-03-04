@@ -14,5 +14,4 @@
       @yield('sidebar')
     </aside>
   @endif
-
 @include('sections.footer')

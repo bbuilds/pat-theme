@@ -1,0 +1,20 @@
+.site-footer .widget {
+  @apply w-full md:w-1/2;
+}
+
+.site-footer .forminator-label {
+  @apply sr-only;
+}
+
+.site-footer .widget .forminator-input,
+.site-footer .widget .forminator-textarea {
+  @apply rounded-lg !important;
+}
+
+.forminator-button {
+  @apply pop button text-white bg-accent py-2 px-4 rounded-full !important;
+}
+
+.forminator-row {
+  @apply mb-4 !important;
+}
