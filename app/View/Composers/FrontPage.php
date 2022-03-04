@@ -35,6 +35,11 @@ class FrontPage extends Composer
             'callout_image' => get_field('callout_image'),
             'callout_title' => get_field('callout_title'),
             'callout_content' => get_field('callout_content'),
+            'cta_section_icon' => get_field('home_cta_icon'),
+            'cta_section_title' => get_field('home_cta_title'),
+            'cta_section_subtitle' => get_field('home_cta_subtitle'),
+            'cta_section_text' => get_field('home_cta_text'),
+            'cta_section_url' => get_field('home_cta_url'),
         ];
     }
 }

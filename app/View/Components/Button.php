@@ -44,7 +44,7 @@ class Button extends Component
     public $types = [
         'default' => 'button',
         'red' => 'button text-white bg-accent py-2 px-4 rounded-full',
-        'blue' => 'button text-white bg-primary py-2 px-4 rounded-full',
+        'blue' => 'button text-white bg-secondary py-2 px-4 rounded-full',
     ];
 
 
