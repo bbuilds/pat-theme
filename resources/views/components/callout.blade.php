@@ -3,7 +3,7 @@
         <figure>{!! $imageElement !!}</figure>
     @endif
     <div class="p-4">
-        <h2 class="text-6xl">{{$title}}</h3>
+        <h2 class="text-6xl leading-tight mb-4">{{$title}}</h3>
         {!! $slot !!}
     </div>
 </div>

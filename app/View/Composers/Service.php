@@ -29,6 +29,9 @@ class Service extends Composer
             'banner_url' => get_field('banner_cta_url'),
             'intro_title' => get_field('service_intro_title'),
             'intro_copy' => get_field('service_intro_copy'),
+            'callout_image_id' => get_field('callout_image'),
+            'callout_title' => get_field('callout_title'),
+            'callout_content' => get_field('callout_content'),
         ];
     }
 
