@@ -24,13 +24,14 @@
         </x-callout>
       </div>
     </section>
-    <section id="services" class="py-10">
-      @dump($services)
+    <section id="services" class="py-10 lg:pb-20">
       <div class="container mx-auto px-4 lg:px-0">
           @if($services)
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8">
             @foreach($services as $service)
-              <x-service-card :image-id="$service['icon']" :title="$service['title']" :excerpt="$service['excerpt']"/>
+              <x-service-card :image="$service['icon']" :title="$service['title']" :excerpt="$service['excerpt']"/>
             @endforeach
+          </div>
           @endif
       </div>
     </section>

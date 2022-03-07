@@ -7,8 +7,7 @@ use Illuminate\View\Component;
 class ServiceCard extends Component
 {
     public $title;
-    public $imageElement;
-    public $imageId;
+    public $image;
     public $excerpt;
 
 
@@ -18,20 +17,10 @@ class ServiceCard extends Component
      * @return void
      */
 
-    public function __construct($title, $imageId = null, $excerpt) {
+    public function __construct($title, $image, $excerpt) {
         $this->title = $title;
-        $this->imageId = $imageId;
+        $this->image = $image;
         $this->excerpt = $excerpt;
-        $this->imageElement = $this->getImage();
-    }
-
-    protected function getImage()
-    {
-        if (!is_numeric($this->imageId)) {
-            return false;
-        }
-
-        return wp_get_attachment_image($this->imageId, 'medium_large');
     }
 
     /**

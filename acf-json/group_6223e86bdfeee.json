@@ -263,7 +263,7 @@
                     "label": "Icon",
                     "name": "icon",
                     "type": "image",
-                    "instructions": "",
+                    "instructions": "This is currently set up for SVG use only.",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
@@ -271,7 +271,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "id",
+                    "return_format": "url",
                     "preview_size": "medium",
                     "library": "all",
                     "min_width": "",
@@ -343,5 +343,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646686551
+    "modified": 1646691477
 }
