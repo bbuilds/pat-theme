@@ -24,5 +24,15 @@
         </x-callout>
       </div>
     </section>
+    <section id="services" class="py-10">
+      @dump($services)
+      <div class="container mx-auto px-4 lg:px-0">
+          @if($services)
+            @foreach($services as $service)
+              <x-service-card :image-id="$service['icon']" :title="$service['title']" :excerpt="$service['excerpt']"/>
+            @endforeach
+          @endif
+      </div>
+    </section>
   @endwhile
 @endsection

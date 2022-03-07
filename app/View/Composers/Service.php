@@ -32,6 +32,7 @@ class Service extends Composer
             'callout_image_id' => get_field('callout_image'),
             'callout_title' => get_field('callout_title'),
             'callout_content' => get_field('callout_content'),
+            'services' => get_field('services_cards'),
         ];
     }
 
