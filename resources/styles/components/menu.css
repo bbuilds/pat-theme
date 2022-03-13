@@ -43,3 +43,17 @@
   min-width: 200px;
   visibility: visible;
 }
+
+/** Pagination */
+
+.page-numbers {
+  @apply inline-block px-2;
+}
+
+a.page-numbers {
+  @apply text-white underline;
+}
+
+.page-numbers.next {
+  @apply ml-auto;
+}
