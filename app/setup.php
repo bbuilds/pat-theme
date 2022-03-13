@@ -203,3 +203,10 @@ function reviews_post_type() {
 
 }
 add_action( 'init', 'App\reviews_post_type', 0 );
+
+
+
+add_action( 'after_setup_theme', function() {
+        add_image_size( 'card', 400, 225 );
+    }
+);
