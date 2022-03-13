@@ -6,7 +6,6 @@ use Illuminate\View\Component;
 
 class Testimonial extends Component
 {
-    public $title;
     public $testimonial;
     public $name;
     public $company;
@@ -16,9 +15,8 @@ class Testimonial extends Component
      *
      * @return void
      */
-    public function __construct($name, $title, $testimonial, $company)
+    public function __construct($name, $testimonial, $company)
     {
-        $this->title = $title;
         $this->testimonial = $testimonial;
         $this->name = $name;
         $this->company = $company;

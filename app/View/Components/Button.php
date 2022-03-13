@@ -37,6 +37,14 @@ class Button extends Component
 
 
     /**
+     * The external link target.
+     *
+     * @var string
+     */
+    public $is_external;
+
+
+    /**
      * The alert types.
      *
      * @var array
@@ -76,13 +84,14 @@ class Button extends Component
      * @param  string  $message
      * @return void
      */
-    public function __construct($type = 'default', $pop = false, $classes = [], $link = false, $url = "#")
+    public function __construct($type = 'default', $pop = false, $classes = [], $link = false, $url = "#", $is_external = false)
     {
         $this->type = $type;
         $this->pop = $pop;
         $this->classes = $this->classNames($this->type);
         $this->link = $link;
         $this->url = $url;
+        $this->$is_external = $is_external;
     }
 
 
