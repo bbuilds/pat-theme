@@ -1,0 +1,19 @@
+.blog-sidebar .widget {
+  @apply bg-white rounded-lg p-4;
+}
+
+.blog-sidebar h2 {
+  @apply text-xl text-primary uppercase mb-2;
+}
+
+.blog-sidebar a {
+  @apply text-black;
+}
+
+.wp-block-categories-list li {
+  @apply py-2;
+}
+
+.wp-block-categories-list li:not(:last-child) {
+  @apply border-b border-gray;
+}

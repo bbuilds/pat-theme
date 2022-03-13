@@ -18,3 +18,5 @@
     @include('partials.pagination')
   </div>
 @endsection
+
+
