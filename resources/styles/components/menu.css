@@ -22,14 +22,16 @@
   @apply text-lg py-1 text-black font-bold md:text-xl;
 }
 
+.primary-nav a:hover {
+  @apply text-accent;
+}
+
 .sub-menu {
-  @apply px-6 py-2 transition-opacity ease-in-out duration-200;
+  @apply px-6 py-2 transition ease-in-out duration-200;
 
   /** using screen utility because linter yells for having too amny applies :( */
   @screen md {
-    @apply px-0 py-0 bg-white border-white right-0 left-auto flex flex-col h-0 w-0 opacity-0 absolute top-full;
-
-    z-index: -1;
+    @apply absolute top-full scale-0 bg-white hadow-md;
   }
 }
 
@@ -38,10 +40,7 @@
 }
 
 .menu-item-has-children:hover > .sub-menu {
-  @apply md:h-auto md:opacity-100 md:overflow-visible md:w-auto md:z-10;
-
-  min-width: 200px;
-  visibility: visible;
+  transform: scale(1);
 }
 
 /** Pagination */
