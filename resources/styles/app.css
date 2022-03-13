@@ -25,6 +25,8 @@
  */
 @import './components/buttons.css';
 @import './components/menu.css';
+@import './components/breadcrumbs.css';
+
 @import './sections/footer.css';
 
 @import 'tailwindcss/utilities';

@@ -1,0 +1,7 @@
+.rank-math-breadcrumb a {
+  @apply text-white;
+}
+
+.rank-math-breadcrumb .separator {
+  @apply px-2;
+}
