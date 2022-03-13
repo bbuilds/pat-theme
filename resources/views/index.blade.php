@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
+  @include('partials.blog-header')
 
   @if (! have_posts())
     <x-alert type="warning">
@@ -16,8 +16,4 @@
   @endwhile
 
   {!! get_the_posts_navigation() !!}
-@endsection
-
-@section('sidebar')
-  @include('sections.sidebar')
 @endsection
