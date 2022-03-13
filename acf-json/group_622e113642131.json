@@ -90,6 +90,13 @@
                 "operator": "==",
                 "value": "template-service.blade.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "template-contact.blade.php"
+            }
         ]
     ],
     "menu_order": 1,
@@ -101,5 +108,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1647186699
+    "modified": 1647206432
 }
