@@ -31,7 +31,7 @@
 
   /** using screen utility because linter yells for having too amny applies :( */
   @screen md {
-    @apply absolute top-full scale-0 bg-white hadow-md;
+    @apply absolute top-full scale-0 bg-white shadow-md;
   }
 }
 
