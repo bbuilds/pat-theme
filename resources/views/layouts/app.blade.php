@@ -4,7 +4,7 @@
 
 @include('sections.header')
   @svg('images.svg.bg-particles', 'max-h-full bg-particles absolute w-full h-auto opacity-10 z-negative')
-  @svg('images.svg.pat-logo-icon-body-bg', 'max-h-full bg-icon absolute h-auto opacity-50 z-negative w-auto')
+  @svg('images.svg.pat-logo-icon-body-bg-2', 'max-h-full bg-icon absolute h-auto opacity-30 z-negative w-auto')
   <main id="main" class="main relative z-10">
     @yield('content')
   </main>

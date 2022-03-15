@@ -12,6 +12,7 @@ class Post extends Composer
      * @var array
      */
     protected static $views = [
+        'partials.page-header',
         'partials.blog-header',
         'partials.content',
         'partials.content-*',
@@ -36,9 +37,6 @@ class Post extends Composer
      */
     public function title()
     {
-        if ($this->view->name() !== 'partials.blog-header') {
-            return get_the_title();
-        }
 
         if (is_home()) {
             if ($home = get_option('page_for_posts', true)) {
@@ -61,7 +59,11 @@ class Post extends Composer
         }
 
         if (is_404()) {
-            return __('Not Found', 'sage');
+            return __('Oh no, are you lost?', 'sage');
+        }
+
+        if ($this->view->name() !== 'partials.blog-header') {
+            return get_the_title();
         }
 
         return get_the_title();
