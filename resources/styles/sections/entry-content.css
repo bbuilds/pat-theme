@@ -1,0 +1,11 @@
+.entry-content > * + * {
+  @apply mt-4;
+}
+
+.entry-content a {
+  @apply underline;
+}
+
+.entry-content a:hover {
+  @apply text-accent;
+}
