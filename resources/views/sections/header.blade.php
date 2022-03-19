@@ -1,7 +1,9 @@
 <header class="relative bg-white text-black py-4 w-full z-50">
   <div class="container mx-auto px-4 flex items-center justify-between">
-    <a href="{{ home_url('/') }}" class="w-24 md:w-32 lg:w-60">
-      @svg("images.svg.pat-logo-horizontal")
+    <a href="{{ home_url('/') }}" class="w-24 md:w-1/4 flex items-center">
+      @svg("images.svg.pat-logo-icon", 'w-auto h-12 md:h-auto md:w-3/12')
+      @svg("images.svg.pat-logo-text", 'hidden h-auto pl-2 md:block md:w-9/12')
+      <span class="screen-reader-text">{!! $siteName !!}</span>
     </a>
     @if (has_nav_menu('primary_navigation'))
       <nav class="nav-primary" aria-label="{{ wp_get_nav_menu_name('primary_navigation') }}">
