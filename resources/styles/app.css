@@ -29,5 +29,6 @@
 @import './components/sidebar.css';
 
 @import './sections/footer.css';
+@import './sections/entry-content.css';
 
 @import 'tailwindcss/utilities';

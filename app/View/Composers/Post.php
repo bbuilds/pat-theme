@@ -62,8 +62,8 @@ class Post extends Composer
             return __('Oh no, are you lost?', 'sage');
         }
 
-        if ($this->view->name() !== 'partials.blog-header') {
-            return get_the_title();
+        if (is_single() && $this->view->name() === 'partials.blog-header') {
+            return __('News', 'sage');
         }
 
         return get_the_title();

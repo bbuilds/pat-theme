@@ -6,9 +6,9 @@
   </div>
   <header class="p-4">
     <span class="text-gray text-sm uppercase">{!!get_the_category()[0]->name!!}</span>
-    <h2 class="text-3xl">
+    <h2 class="text-2xl leading-tight">
       <a class="link-shield" href="{{ get_permalink() }}">
-        {!! $title !!}
+        {!! get_the_title(); !!}
       </a>
     </h2>
   </header>
