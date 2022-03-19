@@ -1,12 +1,10 @@
-<article @php(post_class())>
+<article @php(post_class('text-black py-6'))>
   <header>
     <h2 class="entry-title">
       <a href="{{ get_permalink() }}">
-        {!! $title !!}
+        {!! get_the_title(); !!}
       </a>
     </h2>
-
-    @includeWhen(get_post_type() === 'post', 'partials.entry-meta')
   </header>
 
   <div class="entry-summary">

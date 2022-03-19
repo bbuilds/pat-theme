@@ -9,7 +9,7 @@
       placeholder="{!! esc_attr_x('Search &hellip;', 'placeholder', 'sage') !!}"
       value="{{ get_search_query() }}"
       name="s"
-      class="rounded-full w-full px-4 py-2 text-gray-800 bg-gray-200"
+      class="rounded-full w-full px-4 py-2 text-gray-800 bg-gray-200 text-black shadow"
     >
   </label>
 
