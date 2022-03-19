@@ -23,5 +23,6 @@ export default function toggleMobileMenu() {
     onShow: navigationToggleModal,
     onClose: navigationToggleModal,
     openClass: 'is-menu-open',
+    awaitOpenAnimation: true,
   });
 }

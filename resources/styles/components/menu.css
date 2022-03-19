@@ -1,9 +1,18 @@
-.menu-modal {
-  @apply fixed right-0 left-0 bottom-0 top-0 hidden md:block md:relative md:w-full;
+.menu-modal.is-menu-open {
+  @apply translate-x-0;
 }
 
-.menu-modal.is-menu-open {
-  @apply flex flex-col overflow-auto z-50 px-6 py-8 bg-white;
+.modal-close {
+  z-index: 90;
+}
+
+.modal-close::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .primary-nav {
