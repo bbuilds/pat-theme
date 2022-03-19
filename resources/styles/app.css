@@ -28,6 +28,7 @@
 @import './components/breadcrumbs.css';
 @import './components/sidebar.css';
 
+@import './sections/header.css';
 @import './sections/footer.css';
 
 @import 'tailwindcss/utilities';

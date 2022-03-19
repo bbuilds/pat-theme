@@ -9,10 +9,14 @@ export default function headerScroll() {
     tolerance: 2,
     classes: {
       initial: 'animated',
-      pinned: 'slideDown',
-      unpinned: 'slideUp',
+      pinned: 'translate-y-0',
+      unpinned: '-translate-y-full',
     },
   });
 
-  headroom.init();
+  function init() {
+    headroom.init();
+  }
+
+  init();
 }

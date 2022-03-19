@@ -1,4 +1,4 @@
-<header id="site-header" class="relative bg-white text-black py-4 w-full z-50">
+<header id="site-header" class="site-header bg-white text-black py-4 w-full z-40 transition-all duration-300 ease-in-out fixed top-0 left-0 right-0">
   <div class="container mx-auto px-4 flex items-center justify-between">
     <a href="{{ home_url('/') }}" class="w-24 md:w-1/4 flex items-center">
       @svg("images.svg.pat-logo-icon", 'w-auto h-12 md:h-auto md:w-3/12')

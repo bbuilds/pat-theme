@@ -9,8 +9,6 @@ export default function buttonScroll() {
       behavior: 'smooth',
     });
   }
-
-  console.log('imported event');
   scrollButton.addEventListener('click', function (e) {
     handleScroll(e);
   });
