@@ -6,9 +6,10 @@
     <div class="border border-neutral-50/30 bg-slate-50/10 p-10 lg:py-14 lg:px-20 flex flex-col justify-center items-center text-center rounded-tr-3xl rounded-bl-3xl">
       @svg("images.svg.icon-quote")
       <h3 class="mb-4">{{$testimonial_title}}</h3>
-      <blockquote class="lg:text-xl">{{$testimonial_quote}}
+      <blockquote class="lg:text-xl">
+        <em>{{$testimonial[0]->post_content}}</em>
         <footer class="mt-2">
-            <cite class="not-italic">{{$testimonial_name}}</cite>, <cite class="not-italic">{{$testimonial_company}}</cite>
+            <cite class="not-italic">{{$testimonial[0]->post_title}}</cite>, <cite class="not-italic">{{get_field('company', $testimonial[0]->ID)}}</cite>
         </footer>
       </blockquote>
     </div>

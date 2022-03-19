@@ -1,8 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-  @while(have_posts()) @php(the_post())
-    @include('partials.page-header')
-    @includeFirst(['partials.content-page', 'partials.content'])
-  @endwhile
+  <article @php(post_class('container mx-auto px-4'))>
+    @while(have_posts()) @php(the_post())
+      @include('partials.page-header')
+      @includeFirst(['partials.content-page', 'partials.content'])
+    @endwhile
+  </article>
 @endsection

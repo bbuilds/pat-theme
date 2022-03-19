@@ -266,11 +266,11 @@
             "maxlength": ""
         },
         {
-            "key": "field_621eba31ce218",
-            "label": "Quote",
-            "name": "testimonial_quote",
-            "type": "textarea",
-            "instructions": "",
+            "key": "field_62365073d6569",
+            "label": "Testimonial",
+            "name": "home_testimonial",
+            "type": "relationship",
+            "instructions": "Pick a testimonial",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -278,49 +278,17 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
-        },
-        {
-            "key": "field_621eba40ce219",
-            "label": "Name",
-            "name": "testimonial_name",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_621eba62ce21a",
-            "label": "Company",
-            "name": "testimonial_company",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "50",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "post_type": [
+                "reviews"
+            ],
+            "taxonomy": "",
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": 1,
+            "max": 1,
+            "return_format": "object"
         },
         {
             "key": "field_621fe817bc7ee",
@@ -534,5 +502,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1646684603
+    "modified": 1647726757
 }
