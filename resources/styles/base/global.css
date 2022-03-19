@@ -16,6 +16,10 @@
 
   #app {
     padding-top: 80px;
+
+    @screen md {
+      padding-top: 143px;
+    }
   }
 
   .has-modal-open body {
