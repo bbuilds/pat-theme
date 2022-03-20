@@ -5,13 +5,13 @@
     <div class="flex flex-wrap md:flex-nowrap">
        @foreach($home_services as $service)
           <div class="w-full md:w-1/3 p-4 mb-8 md:mb-0">
-            <div class="service flex flex-col items-center text-center justify-center">
+            <div class="service flex flex-col items-center text-center justify-center h-full">
               @svg($service['icon'], 'h-10 w-auto mb-2 md:h-20')
               <p class="text-3xl mb-2">{{$service['title']}}</p>
               <h3 class="text-base mb-4">{{$service['subtitle']}}</h3>
               <p class="mb-4">{{$service['excerpt']}}</p>
-              <x-button type="red" link=true :url="$service['cta_link']" pop=true>
-                {{$service['cta_text']}}
+              <x-button class="mt-auto" type="red" link=true :url="$service['cta_link']" pop=true>
+                {!!$service['cta_text']!!} <span class="sr-only">{!!__('about ')!!} {{$service['subtitle']}} {!!__(' in Hampton Roads')!!}</span>
               </x-button>
             </div>
           </div>

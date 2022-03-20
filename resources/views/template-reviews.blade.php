@@ -11,7 +11,7 @@
     <div class="container mx-auto px-4 lg:px-0">
       @if($reviews)
         @foreach($reviews as $review)
-          <x-testimonial :name="$review->post_title" :testimonial="$review->post_content" company="google" />
+          <x-testimonial :name="$review->post_title" :testimonial="$review->post_content" :company="get_field('company', $review->ID)" />
         @endforeach
       @endif
     </div>

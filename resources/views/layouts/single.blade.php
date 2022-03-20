@@ -4,7 +4,7 @@
 
 @include('sections.header')
 @svg('images.svg.bg-particles', 'bg-particles absolute w-full h-auto opacity-10 z-negative')
-@svg('images.svg.pat-logo-icon', 'bg-icon absolute h-auto opacity-50 z-negative w-auto')
+@svg('images.svg.pat-logo-icon', 'max-h-full bg-icon absolute h-auto opacity-50 z-negative w-auto')
   @include('partials.blog-header')
   <div class="container px-4 mx-auto lg:px:0">
     <div class="flex flex-wrap lg:flex-nowrap lg:gap-x-8 pb-10 lg:pb-20">

@@ -40,13 +40,6 @@ add_action('enqueue_block_editor_assets', function () {
     bundle('editor')->enqueue();
 }, 100);
 
-add_action( 'wp_enqueue_scripts', function() {
-    if ( current_user_can( 'update_core' ) ) {
-		return;
-	}
-	wp_deregister_style( 'dashicons' );
-} );
-
 
 /**
  * Register the initial theme setup.
