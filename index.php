@@ -6,7 +6,7 @@
     <?php wp_head(); ?>
   </head>
 
-  <body <?php body_class('text-base antialiased text-white overflow-x-hidden relative'); ?>>
+  <body <?php body_class('text-base antialiased text-white relative'); ?>>
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>
 

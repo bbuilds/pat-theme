@@ -7,6 +7,6 @@
 @endsection
 
 @section('sidebar')
-    {!! get_the_post_thumbnail(null, 'card', array( 'class' => 'rounded-lg mb-6 lg:mb-10'));!!}
+    {!! get_the_post_thumbnail(null, 'card', array( 'class' => 'hidden lg:block rounded-lg mb-6 lg:mb-10'));!!}
     @php(dynamic_sidebar('sidebar-primary'))
 @endsection

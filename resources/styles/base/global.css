@@ -1,6 +1,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    @apply overflow-x-hidden;
   }
 
   body {
@@ -14,11 +15,19 @@
       0% 0% no-repeat padding-box;
   }
 
+  .admin-bar .site-header {
+    top: 25px;
+  }
+
   #app {
     padding-top: 80px;
 
     @screen md {
-      padding-top: 143px;
+      padding-top: 85px;
+    }
+
+    @screen lg {
+      padding-top: 103px;
     }
   }
 
@@ -31,8 +40,9 @@
   }
 
   .bg-particles {
-    top: -20%;
-    left: -20%;
+    top: 40px;
+    left: 0;
+    max-width: 80vw;
   }
 
   /* .bg-particles-bottom {
@@ -44,7 +54,7 @@
   } */
 
   .bg-icon {
-    top: 0;
+    top: 40px;
     right: -2%;
     max-width: 60vw;
   }

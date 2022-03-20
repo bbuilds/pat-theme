@@ -5,31 +5,31 @@
   h4,
   h5,
   h6 {
-    @apply font-semibold;
+    @apply font-semibold leading-tight;
   }
 
   h1 {
-    @apply text-9xl;
-  }
-
-  h2 {
-    @apply text-8xl;
-  }
-
-  h3 {
-    @apply text-7xl;
-  }
-
-  h4 {
-    @apply text-6xl;
-  }
-
-  h5 {
     @apply text-5xl;
   }
 
-  h6 {
+  h2 {
     @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-lg;
   }
 
   a {

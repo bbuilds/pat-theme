@@ -9,7 +9,10 @@ export default function buttonScroll() {
       behavior: 'smooth',
     });
   }
-  scrollButton.addEventListener('click', function (e) {
-    handleScroll(e);
-  });
+
+  if (scrollButton) {
+    scrollButton.addEventListener('click', function (e) {
+      handleScroll(e);
+    });
+  }
 }

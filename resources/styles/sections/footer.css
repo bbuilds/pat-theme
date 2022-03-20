@@ -2,6 +2,10 @@
   @apply w-full md:w-1/2;
 }
 
+.site-footer h2 {
+  @apply mb-4;
+}
+
 .site-footer .forminator-label {
   @apply sr-only;
 }

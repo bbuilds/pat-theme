@@ -1,7 +1,7 @@
 const fsMin = 1.125;
 const fsMax = 1.25;
-const msFactorMin = 1;
-const msFactorMax = 1.125;
+const msFactorMin = 1.125;
+const msFactorMax = 1.33;
 const screenMin = 20;
 const screenMax = 96;
 
@@ -25,14 +25,10 @@ module.exports = {
   xs: clamp(-2),
   sm: clamp(-1),
   base: clamp(0),
-  lg: clamp(1),
-  xl: clamp(2),
-  '2xl': clamp(3),
-  '3xl': clamp(4),
-  '4xl': clamp(5),
-  '5xl': clamp(6),
-  '6xl': clamp(7),
-  '7xl': clamp(8),
-  '8xl': clamp(9),
-  '9xl': clamp(10),
+  lg: clamp(1.333),
+  xl: clamp(1.777),
+  '2xl': clamp(2.369),
+  '3xl': clamp(2, 3.157),
+  '4xl': clamp(3, 4.25),
+  '5xl': clamp(4, 4.8),
 };

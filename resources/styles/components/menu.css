@@ -28,7 +28,7 @@
 }
 
 .primary-nav a {
-  @apply text-lg py-1 text-black font-bold md:text-xl;
+  @apply text-lg py-1 text-black font-bold md:text-base lg:text-lg;
 }
 
 .primary-nav a:hover {

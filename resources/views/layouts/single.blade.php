@@ -8,12 +8,12 @@
   @include('partials.blog-header')
   <div class="container px-4 mx-auto lg:px:0">
     <div class="flex flex-wrap lg:flex-nowrap lg:gap-x-8 pb-10 lg:pb-20">
-      <main id="main" class="main relative z-10 w-full lg:w-3/4">
+      <main id="main" class="main relative z-10 w-full lg:w-3/4 mb-10 lg:mb-0">
         @yield('content')
       </main>
 
       @hasSection('sidebar')
-        <aside class="sidebar blog-sidebar lg:w-1/4">
+        <aside class="sidebar blog-sidebar w-full lg:w-1/4">
           @yield('sidebar')
         </aside>
       @endif
