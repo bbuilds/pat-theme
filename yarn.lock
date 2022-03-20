@@ -6534,6 +6534,11 @@ schema-utils@^4.0.0:
     ajv-formats "^2.1.1"
     ajv-keywords "^5.0.0"
 
+scrambling-letters@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/scrambling-letters/-/scrambling-letters-1.6.2.tgz#e07c33f5f310703aefd29605ad655a1e2987a313"
+  integrity sha512-MsL9SRrShDyxzyiHkc+gqWRpYY7vVz3PCgZMnhAIhxf0OpQTNQ1lNp4Sbcs11o4gEs4bwnFf8SQ80DiEHvLm6A==
+
 scrollreveal@^4.0.9:
   version "4.0.9"
   resolved "https://registry.yarnpkg.com/scrollreveal/-/scrollreveal-4.0.9.tgz#47866e1967ff604e64bac28818fe0dcea44f2c8b"

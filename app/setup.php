@@ -16,9 +16,9 @@ use function Roots\bundle;
 
 add_action( 'wp_head', function() {
 		?>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap">
+        <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&display=swap">
 		<?php
 } );
 
@@ -39,6 +39,14 @@ add_action('wp_enqueue_scripts', function () {
 add_action('enqueue_block_editor_assets', function () {
     bundle('editor')->enqueue();
 }, 100);
+
+add_action( 'wp_enqueue_scripts', function() {
+    if ( current_user_can( 'update_core' ) ) {
+		return;
+	}
+	wp_deregister_style( 'dashicons' );
+} );
+
 
 /**
  * Register the initial theme setup.
