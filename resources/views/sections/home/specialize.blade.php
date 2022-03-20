@@ -1,4 +1,4 @@
-<section id="home-specialize" class="py-10">
+<section id="home-specialize" class="reveal py-10">
   <div class="container mx-auto">
     <h2 class="sr-only">Virginia Beach Real Estate IT Services Provided</h2>
     <p class="font-semibold text-4xl text-center mb-6 lg:mb-12">What we specialize in</p>

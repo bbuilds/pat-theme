@@ -1,4 +1,4 @@
-<section id="home-callout" class="py-10 lg:py-20">
+<section id="home-callout" class="reveal py-10 lg:py-20">
   <div class="container mx-auto px-4 text-center flex flex-col items-center">
     @svg($cta_section_icon, 'h-20 w-auto mb-4')
     <header>

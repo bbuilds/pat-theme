@@ -27,6 +27,7 @@
 @import './components/menu.css';
 @import './components/breadcrumbs.css';
 @import './components/sidebar.css';
+@import './components/forms.css';
 
 @import './sections/footer.css';
 @import './sections/entry-content.css';

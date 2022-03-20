@@ -1,0 +1,20 @@
+.nf-field-label-inline,
+.nf-field-label,
+.nf-form-fields-required {
+  @apply sr-only !important;
+}
+
+.ninja-forms-field {
+  @apply rounded-lg !important;
+}
+
+.nf-form-content button,
+.nf-form-content input[type='button'],
+.nf-form-content input[type='submit'] {
+  @apply bg-accent !important;
+  @apply text-white !important;
+  @apply py-2 !important;
+  @apply px-4 !important;
+  @apply rounded-full !important;
+  @apply cursor-pointer;
+}

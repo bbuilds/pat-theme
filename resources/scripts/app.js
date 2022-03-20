@@ -2,6 +2,7 @@ import {domReady} from '@roots/sage/client';
 import toggleMobileMenu from './navigation';
 import buttonScroll from './buttonScroll';
 import headerScroll from './headerScroll';
+import scrollAnimations from './scroll-reveal';
 /**
  * app.main
  */
@@ -15,6 +16,7 @@ const main = async (err) => {
   toggleMobileMenu();
   buttonScroll();
   headerScroll();
+  scrollAnimations();
 };
 
 /**

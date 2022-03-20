@@ -1,4 +1,4 @@
-<section id="home-testimonial" class="py-10 lg:py-20">
+<section id="home-testimonial" class="reveal py-10 lg:py-20">
   <header>
     <h2 class="sr-only">Real Estate IT Services in Virginia Beach Testimonials</h2>
   </header>

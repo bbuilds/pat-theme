@@ -1,5 +1,17 @@
 import ScrollReveal from 'scrollreveal';
 
-const sr = ScrollReveal();
+export default function scrollAnimations() {
+  const sr = ScrollReveal();
+  const revealList = document.querySelectorAll('.reveal');
 
-export default sr;
+  if (revealList) {
+    const slideUp = {
+      distance: '10%',
+      origin: 'bottom',
+      opacity: 0,
+      easing: 'ease-in-out',
+      delay: 500,
+    };
+    sr.reveal(revealList, slideUp);
+  }
+}

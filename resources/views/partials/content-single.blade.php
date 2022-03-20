@@ -1,4 +1,4 @@
-<article @php(post_class('bg-white text-black shadow  rounded-xl overflow-hidden drop-shadow-md pb-6 lg:px-8 lg:py-10'))>
+<article @php(post_class('reveal bg-white text-black shadow  rounded-xl overflow-hidden drop-shadow-md pb-6 lg:px-8 lg:py-10'))>
   {!! get_the_post_thumbnail(null, 'card', array( 'class' => 'lg:hidden rounded-tr-lg rounded-tl-lg mb-6'));!!}
   <header class="px-6 lg:px-0">
     <time class="updated block text-sm text-gray" datetime="{{ get_post_time('c', true) }}">
