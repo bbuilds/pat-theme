@@ -43,6 +43,10 @@
     top: 40px;
     left: 0;
     max-width: 80vw;
+
+    @screen lg {
+      top: -5%;
+    }
   }
 
   /* .bg-particles-bottom {

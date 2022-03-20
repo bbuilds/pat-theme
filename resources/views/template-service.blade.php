@@ -10,7 +10,7 @@
     <section id="service-intro" class="py-6">
       <div class="container mx-auto px-4 md:px-0">
         <div class="flex flex-wrap md:flex-nowrap">
-          <h2 class="text-5xl md:w-1/2 md:pr-4 mb-4 md:mb-0">{!! $intro_title !!}</h2>
+          <h2 class="text-2xl md:w-1/2 md:pr-8 mb-4 md:mb-0">{!! $intro_title !!}</h2>
           <div class="md:w-1/2 md:pr-2">
             {!!$intro_copy!!}
           </div>

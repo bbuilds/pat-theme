@@ -25,7 +25,7 @@ class Callout extends Component
             return false;
         }
 
-        return wp_get_attachment_image($this->imageId, 'medium_large');
+        return wp_get_attachment_image($this->imageId, 'medium_large', false, ['class' => 'object-cover']);
     }
     /**
      * Get the view / contents that represent the component.
