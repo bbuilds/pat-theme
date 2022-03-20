@@ -3,7 +3,7 @@
       @svg($image, 'h-20 lg:h-32 w-auto mb-4')
     @endif
     @if($title)
-      <p class="text-4xl mb-4">{!! $title !!}</p>
+      <p class="text-2xl mb-4">{!! $title !!}</p>
     @endif
     @if($excerpt)
       <p>{!! $excerpt !!}</p>
