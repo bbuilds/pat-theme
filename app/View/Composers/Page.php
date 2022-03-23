@@ -4,7 +4,7 @@ namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
 
-class Contact extends Composer
+class Page extends Composer
 {
     /**
      * List of views served by this composer.
@@ -12,7 +12,7 @@ class Contact extends Composer
      * @var array
      */
     protected static $views = [
-        'template-contact'
+        'partials.banner-header'
     ];
 
     /**

@@ -23,10 +23,6 @@ class Reviews extends Composer
     public function with()
     {
         return [
-            'page_title' => $this->pageTitle(),
-            'banner_copy' => get_field('banner_copy'),
-            'banner_cta' => get_field('banner_cta_text'),
-            'banner_url' => get_field('banner_cta_url'),
             'reviews' => get_field('reviews'),
         ];
     }
