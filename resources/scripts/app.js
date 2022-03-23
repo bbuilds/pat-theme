@@ -3,7 +3,7 @@ import toggleMobileMenu from './navigation';
 import buttonScroll from './buttonScroll';
 import headerScroll from './headerScroll';
 import scrollAnimations from './scroll-reveal';
-import scrambleHeadings from './scrambleHeaders';
+
 /**
  * app.main
  */
@@ -18,7 +18,6 @@ const main = async (err) => {
   buttonScroll();
   headerScroll();
   scrollAnimations();
-  scrambleHeadings();
 };
 
 /**

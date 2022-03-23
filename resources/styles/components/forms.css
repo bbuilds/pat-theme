@@ -5,7 +5,7 @@
 }
 
 .ninja-forms-field {
-  @apply rounded-lg !important;
+  @apply rounded-lg text-black p-1 !important;
 }
 
 .nf-form-content button,
