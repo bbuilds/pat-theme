@@ -12,7 +12,8 @@ class Service extends Composer
      * @var array
      */
     protected static $views = [
-        'template-service'
+        'template-service',
+        'template-all-services',
     ];
 
     /**

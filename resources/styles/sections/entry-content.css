@@ -9,3 +9,7 @@
 .entry-content a:hover {
   @apply text-accent;
 }
+
+.dark-content a {
+  @apply text-white;
+}
