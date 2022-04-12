@@ -29,16 +29,6 @@ add_action( 'wp_head', function() {
 
 
 
-add_action( 'wp_enqueue_scripts',  function () {
-	if ( current_user_can( 'update_core' ) ) {
-		return;
-	}
-	wp_deregister_style( 'dashicons' );
-    wp_enqueue_style( 'nf-display', \Ninja_Forms::$url . 'assets/css/display-structure.css' );
-});
-
-
-
 /**
  * Register the theme assets.
  *

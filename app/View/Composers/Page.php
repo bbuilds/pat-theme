@@ -27,6 +27,7 @@ class Page extends Composer
             'banner_copy' => get_field('banner_copy'),
             'banner_cta' => get_field('banner_cta_text'),
             'banner_url' => get_field('banner_cta_url'),
+            'is_internal_cta_url' =>$this->isExternalURL(),
         ];
     }
 
@@ -44,5 +45,16 @@ class Page extends Composer
         }
 
         return get_the_title();
+    }
+
+    public function isExternalURL() {
+        $banner_url = get_field('banner_cta_url');
+        $site_url = get_site_url();
+
+        if(strpos($banner_url, $site_url) !== false) {
+            return true;
+        }
+
+        return false;
     }
 }

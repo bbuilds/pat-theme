@@ -3,7 +3,7 @@
     <h1 id="scramble-header" class="mb-2">{!! $page_title !!}</h1>
     <p class="mb-4 py-4">{!!$banner_copy!!}</p>
     @if($banner_cta)
-      <x-button type="red" id="scroll-contact" link=true url={{$banner_url}} pop=true>
+      <x-button type="red" :id="($is_internal_cta_url) ? 'scroll-contact' : 'contact-button'" link=true url={{$banner_url}} pop=true :target="($is_internal_cta_url) ? '_self' : '_blank'">
         {{$banner_cta}}
       </x-button>
     @endif

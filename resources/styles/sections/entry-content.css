@@ -10,6 +10,11 @@
   @apply text-accent;
 }
 
+.entry-content ul {
+  @apply list-disc;
+  @apply pl-4;
+}
+
 .dark-content a {
   @apply text-white;
 }
